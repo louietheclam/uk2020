@@ -98,11 +98,11 @@ p {
 <h1>UK BABY NAME GENERATOR 2023
 </h1>
 
-<input type="button" id="Masc" value="Masculine" onclick="MascNames(); lastValue()" />
+<input type="button" id="Masc" value="Masculine" onclick="MascNames(); MiddleValue()" />
 
-<input type="button" id="Fem" value="Feminine" onclick="FemNames(); lastValue()" />
+<input type="button" id="Fem" value="Feminine" onclick="FemNames(); MiddleValue()" />
 
-<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); lastValue()" />
+<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); MiddleValue()" />
 
 <div>
 
@@ -110,7 +110,7 @@ p {
 
 <p>Your name is...</p>
 
-<span id="firstname" ></span>&nbsp;<span id="lastname" ></span>
+<span id="firstname" ></span>&nbsp;<span id="Middlename" ></span>
 
 </div>
 <div id="footer">Enjoy!</div>
@@ -156,13 +156,13 @@ function FemNames()
 }
 
 
-function lastValue()
+function MiddleValue()
 {
-	var lastn = "Abell Aber&nbsp;Cromey Andrewes Arxden Ashton Aspinall Baker Bale Barefoote Barker Barr Beaufoy Bee Bellies Bendish Bishop Bludder Blundell Bomelimnn Boucher Branfill Brereton Bridges Bridges Brisley Bromley Brydges Buck Buckeridge Bull Burrell Burton Byde Caesar Carlill Castle Champnys Charlton Checkley Chester Child Cibber Clarke Clarrys Clemente Clementi Clinkard Clutterbook Conisby Constable Cooke Corbett Cordell Cowper Cracherode Cressy Crewe Crompton Culpepper Dacre Daly Dawgs de&nbsp;Carterett de&nbsp;Garencieres Devereux Diamond Dickenson Disbrowe Dodd Dodson Dowghtie Draper Ducate Duckenfield Dunch Duncombe Edmonds Eldridge Ellis Ely Emery Eyre Eyton Fairborne Ferne Fettiplace Figge Finen Firebrace Firebrace Flewellin Foane Formose Fox Franck French Fuller Gabriel Gascoigne Gates Gedney Gee Gibbs Gill Godscall Goodenough Grimstone Gutteridge Hales Harrison Havord Hawkins Henshawe Hext Honywood Hooker Hope Hopkins Humphreys Hunsdon Hunt Jewell Kiligrew Kingesfield Knight Lawrence Lewys Ley Lunt Merriman Merritt Michaelwright Milkesopp Minterne Minus Mood Moose More Moreau Nokes Parke Pattinson Pechey Pinchion Pollard Popple Price Ridgly Roberts Rolt Sanders Silvester Slater Smith Snelling Soane Tahurean Taylor Thacker Tryon Tuko Turpin Tyndall Valentine Warner Wesopp Whiteston Whitney Williams Willis Willoughbie Witham Wright Wyngham";
-    var last = [];
-    last = lastn.split(" ");
-    var random = last[Math.floor(Math.random() * last.length)];
-document.getElementById("lastname").innerHTML=random;
+	var middlen = "Abell Aber&nbsp;Cromey Andrewes Arxden Ashton Aspinall Baker Bale Barefoote Barker Barr Beaufoy Bee Bellies Bendish Bishop Bludder Blundell Bomelimnn Boucher Branfill Brereton Bridges Bridges Brisley Bromley Brydges Buck Buckeridge Bull Burrell Burton Byde Caesar Carlill Castle Champnys Charlton Checkley Chester Child Cibber Clarke Clarrys Clemente Clementi Clinkard Clutterbook Conisby Constable Cooke Corbett Cordell Cowper Cracherode Cressy Crewe Crompton Culpepper Dacre Daly Dawgs de&nbsp;Carterett de&nbsp;Garencieres Devereux Diamond Dickenson Disbrowe Dodd Dodson Dowghtie Draper Ducate Duckenfield Dunch Duncombe Edmonds Eldridge Ellis Ely Emery Eyre Eyton Fairborne Ferne Fettiplace Figge Finen Firebrace Firebrace Flewellin Foane Formose Fox Franck French Fuller Gabriel Gascoigne Gates Gedney Gee Gibbs Gill Godscall Goodenough Grimstone Gutteridge Hales Harrison Havord Hawkins Henshawe Hext Honywood Hooker Hope Hopkins Humphreys Hunsdon Hunt Jewell Kiligrew Kingesfield Knight Lawrence Lewys Ley Lunt Merriman Merritt Michaelwright Milkesopp Minterne Minus Mood Moose More Moreau Nokes Parke Pattinson Pechey Pinchion Pollard Popple Price Ridgly Roberts Rolt Sanders Silvester Slater Smith Snelling Soane Tahurean Taylor Thacker Tryon Tuko Turpin Tyndall Valentine Warner Wesopp Whiteston Whitney Williams Willis Willoughbie Witham Wright Wyngham";
+    var middle = [];
+    middle = middlen.split(" ");
+    var random = middle[Math.floor(Math.random() * middle.length)];
+document.getElementById("middlename").innerHTML=random;
 }
 
 </script>
