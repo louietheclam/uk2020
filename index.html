@@ -7,7 +7,7 @@ cmd+f var lastn, var fem, var masc, or var neutral (depending on which category 
 -->
 
 <head> 
-<title>UK BABY NAME GENERATOR 2020s</title>
+<title>Old London Name Generator</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -95,14 +95,14 @@ p {
 
 <div id="post"> 
 
-<h1>UK BABY NAME GENERATOR 2020s
+<h1>Old London Name Generator
 </h1>
 
-<input type="button" id="Masc" value="Masculine" onclick="MascNames(); MiddleValue()" />
+<input type="button" id="Masc" value="Masculine" onclick="MascNames(); lastValue()" />
 
-<input type="button" id="Fem" value="Feminine" onclick="FemNames(); MiddleValue()" />
+<input type="button" id="Fem" value="Feminine" onclick="FemNames(); lastValue()" />
 
-<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); MiddleValue()" />
+<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); lastValue()" />
 
 <div>
 
@@ -110,7 +110,7 @@ p {
 
 <p>Your name is...</p>
 
-<span id="firstname" ></span>&nbsp;<span id="MiddleValue" ></span>
+<span id="firstname" ></span>&nbsp;<span id="lastname" ></span>
 
 </div>
 <div id="footer">Enjoy!</div>
@@ -124,7 +124,7 @@ document.addEventListener('dblclick', (event) => {
 function GetValue()
 
 {
-	var neutral = "  ";
+	var neutral = "Affray Aglandby Aleby Allured Anstid Audley Awdery Beaty Bennett Bethial Billedge Casia Chamond Christian Clemence Collet Darnigold Deliverance Dionis Discipline Duglas Emblin Esperance Essex Evarell Fayles Felis Fortune Godly Gylmen Honor Lake Lisle Lofte Margate Melior Mudwin Neale Parson Pascady Peregrine Stacie Victory Astrabold Bamber Champion Cheyney Clobery Cresheld Cromwell Dod Dowse Duncombe Dymock Everingham Fanstone Fooke German George Granado Grivell Gyfford Harecourt Heigham Jenkins Kenricke Kingsmill Lawde Loftus Lovet Lowrie Lyming Otwelll Papworth Price Redmayne Scorey Sedgwick Sherrard Stint Tedge Tutcher Uryon Uvedall Valence Valentine Walgrave Welbore";
     var myarray = [];
     myarray = neutral.split(" ");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
@@ -136,7 +136,7 @@ function GetValue()
 function MascNames()
 
 {
-	var masc = "Astrabold Balthazar Bamber Basil Belisarius Buttulph Caius Champion Cheyney Clobery Cresheld Cromwell Dod Dowse Dudley Duncombe Dymock Elizeumn Everingham Fanstone Fooke German Granado Greaves Grivell Gyfford Harecourt Heigham Hercules Hungerford Jenkins Julius Justinian Kenricke Kingsmill Lawde Loftus Lovet Lyming Marmaduke Marmaduke Mordaunt Muzio Orlando Otwelll Papworth Price Ralf Redmayne Scorey Sedgwick Sherrard Skynner Stafford Stint Tedge Tutcher Uryon Uvedall Valentine Walgrave Welbore";
+	var masc = "Abel Arthur Astrabold Audley Awdery Balthazar Bamber Basil Bengrave Belisarius Brampton Buttulph Caius Chamond Champion Cheyney Christopher Clobery Clotworthy Cresheld Cromwell Dod Dowse Dudley Duncombe Dymock Edward Elizeumn Erasmus Everingham Fanstone Fooke Francis George German Gideon Giles Godfrey Granado Greaves Griffin Grivell Gyfford Harecourt Heigham Henry Hercules Hilkiah Hugh Humphrey Hungerford Ichabod Jenkins John Jonas Josiah Julius Justinian Kenricke Kingsmill Launcelot Lawde Lisle Lodowick Loftus Lovet Lyming Marmaduke Matthew Mordaunt Muzio Nicholas Orlando Oswald Otwell Papworth Percival Peregrine Peter Philip Price Ralf Rawson Redmayne Richard Robert Roger Scorey Sedgwick Sherrard Simon Skynner Smithsby Stafford Stint Tedge Theophilus Thomas Tobiah Tutcher Urban Uryon Uvedall Valence Valentine Walgrave Welbore William";
 
     var myarray = [];
     myarray = masc.split(" ");
@@ -148,7 +148,7 @@ function MascNames()
 function FemNames()
 
 {
-	var fem = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Elsie Rosie Grace Millie Emily Sofia Daisy Evelyn Evie Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Lottie Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Gracie Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ellie Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Nellie Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Frankie Annie Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Pippa Indie Felicity Edie Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Tilly Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Hattie Esther Polly Amira Zainab Connie Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Callie Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Penny Vienna Ayah Lucia Laura Julia Mirha Ayda Betsy Darcey Lexi Faith Billie Winnie Hana Everly Liliana Maggie Nola Talia Emmie Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Dottie Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Effie Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Nelly Flora Josie Melissa Alaia Aliza Leia Ayesha Georgie Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom";
+	var fem = "Affray Aglandby Agnes Agrapina Aleby Alethea Alice Allured Amphillis Anastatia Angelica Anna Anne Anstid Appolina Archibella Audrey Aveline Avice Avis Bathonia Beatrice Beaty Bennett Bethial Billedge Bithia Blanch Blandina Blithe Bridget Casia Catharine Catherine Chrisogan Christabell Christian Christiana Cicilie Clare Clemence Collet Constance Cornelia Damaris Darnigold Deliverance Diana Dionese Dionis Dionysia Discipline Dorcas Duglas Dulcibella Elfrica Elianora Elizabeth Ellen Ellinor Ellyott Emblin Emlin Emott Epha Epiphania Esperance Essex Ethelred Eva Evarell Experientia Fayles Felis Flower Fortune Frances Fridiswide Friswith Genevera Genieve Godly Griselle Grizegon Gylmen Hawish Hellenor Henrietta Hester Honor Humfrida Jael Jane Johanna Katherine Katurah Kinborrow Lake Lettice Lofte Lovise Lowrie Lucretia Lucy Mabella Magdalen Manon Margaret Margaretta Margate Maria Mary Melior Mercy Michiell Mildred Millicent Mudwin Neale Olimpa Olive Oriana Parson Pascady Penelope Petronella Phalatias Phebe Philadelphia Priscilla Richardina Robina Rosamond Sarah Saunderina Scolastica Selina Sibell Sicily Stacie Susanna Sysley Temperance Theophania Thomasine Timothea Tryphena Ursula Utrisia Victory Violette Wilcifride Winefred Wyborough";
     var myarray = [];
     myarray = fem.split(" ");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
@@ -156,13 +156,13 @@ function FemNames()
 }
 
 
-function MiddleValue()
+function lastValue()
 {
-	var middlen = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Elsie Rosie Grace Millie Emily Sofia Daisy Evelyn Evie Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Lottie Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Gracie Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ellie Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Nellie Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Frankie Annie Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Pippa Indie Felicity Edie Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Tilly Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Hattie Esther Polly Amira Zainab Connie Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Callie Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Penny Vienna Ayah Lucia Laura Julia Mirha Ayda Betsy Darcey Lexi Faith Billie Winnie Hana Everly Liliana Maggie Nola Talia Emmie Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Dottie Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Effie Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Nelly Flora Josie Melissa Alaia Aliza Leia Ayesha Georgie Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom";
-    var middle = [];
-    middle = middlen.split(" ");
-    var random = middle[Math.floor(Math.random() * middle.length)];
-document.getElementById("MiddleValue").innerHTML=random;
+	var lastn = "Abell Ampleforthe Andrewes Appleby Arxden Ashpoole Ashton Aspinall Baker Bale Barefoote Barker Barr Beaufoy Bee Belhowse Bellies Bendish Bevys Bishop Bludder Blundell Boucher Branfill Bredcake Brereton Bridges Brisley Bromley Brydges Buck Buckeridge Bull Burrell Burton Byde Caesar Carlill Castle Champnys Charlton Checkley Chester Child Cibber Clarke Clarrys Clemente Clinkard Clutterbook Cobb Conisby Constable Cooke Cootes Corbett Cordell Cowper Cracherode Cressy Crewe Crompton Crowe Culpepper Dacre Daly Dawgs de&nbsp;Carterett de&nbsp;Garencieres Devereux Diamond Dickenson Disbrowe Dodd Dodson Dowghtie Draper Ducate Duckenfield Dunch Duncombe Earning Edmonds Eelbancke Eldridge Ellis Ely Emery Eyre Eyton Fairborne Fearne Feets Fettiplace Figge Finen Firebrace Fish Fitzhugh Flewellin Fludd Foane Formose Fothersbey Fox Franck French Frowt Fuller Gabriel Gascoigne Gates Gaunt Gedney Gee Gibbs Gill Glasscocke Godscall Golightlye Goodaker Goodenough Goodwyn Graveley Graygoose Grimesdytche Grimstone Gutteridge Gwillim Hales Halfepenny Harrison Havord Hawkins Hebblethwaite Henshawe Hext Honywood Hooker Hope Hopkins Humphreys Hunsdon Hunt Jewell Jolley Kiligrew Kingesfield Knight Larke Lawrence Lewys Ley Littlejohn Lockley Lunt Merriman Merritt Michaelwright Milkesopp Minterne Minus Mood Moose More Moreau Nokes Parke Pattinson Pechey Pinchion Pollard Popple Price Puckle Pynfolde Rankyn Ridgly Roberts Robotham Rolt Sanders Scobble Silvester Slater Smith Snelling Soane St.&nbsp;John Tahurean Talbott Taylor Thacker Toplady Tooting Tryon Tuko Turpin Tyndall Twiste Twogood Valentine Wagstaffe Warner Wesopp Whiteston Whitney Whusheatt Wicherley Williams Willis Willoughbie Witham Woolfe Worme Wright Wylde Wyngham Zebbett";
+    var last = [];
+    last = lastn.split(" ");
+    var random = last[Math.floor(Math.random() * last.length)];
+document.getElementById("lastname").innerHTML=random;
 }
 
 </script>
