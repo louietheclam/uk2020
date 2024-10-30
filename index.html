@@ -3,7 +3,7 @@
 <html>
 <!-- 
 To add more names:
-cmd+f var lastn, var fem, var masc, or var neutral (depending on which category you want to add the name to) and input the name in between the " ". Names are separated by spaces, no commas needed. Important to note that neutral is separate from the masculine/feminine names and if you want to add a name to both feminine and neutral, you have to input the name under both categories. Enjoy!
+cmd+f var midn, var fem, var masc, or var neutral (depending on which category you want to add the name to) and input the name in between the " ". Names are separated by spaces, no commas needed. Important to note that neutral is separate from the masculine/feminine names and if you want to add a name to both feminine and neutral, you have to input the name under both categories. Enjoy!
 -->
 
 <head> 
@@ -98,11 +98,11 @@ p {
 <h1>UK BABY NAME GENERATOR - 2020s
 </h1>
 
-<input type="button" id="Masc" value="Masculine" onclick="MascNames(); lastValue()" />
+<input type="button" id="Masc" value="Masculine" onclick="MascNames(); mascmiddleValue()" />
 
-<input type="button" id="Fem" value="Feminine" onclick="FemNames(); lastValue()" />
+<input type="button" id="Fem" value="Feminine" onclick="FemNames(); femmiddleValue()" />
 
-<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); lastValue()" />
+<input type="button" id="Neutral" value="Gender Neutral" onclick="GetValue(); middleValue()" />
 
 <div>
 
@@ -110,7 +110,7 @@ p {
 
 <p>Your name is...</p>
 
-<span id="firstname" ></span>&nbsp;<span id="lastname" ></span>
+<span id="firstname" ></span>&nbsp;<span id="middlename" ></span>
 
 </div>
 <div id="footer">Enjoy!</div>
@@ -156,14 +156,31 @@ function FemNames()
     document.getElementById("firstname").innerHTML=random;
 }
 
-
-function lastValue()
+function mascmiddleValue()
 {
-	var lastn = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Grace Emily Sofia Daisy Evelyn Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Indie Felicity Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Esther Polly Amira Zainab Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Vienna Ayah Lucia Laura Julia Mirha Ayda Darcey Faith Hana Everly Liliana Nola Talia Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Flora Melissa Alaia Aliza Leia Ayesha Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom Laila Maja Paige India Irha Robin Amelia-Rose Rae Saoirse Ariya Isra Alicia Cecilia Ocean Aleena Amayah Nylah Inayah Kaia Miley Adeline Amirah Neve Alisha Helena Hawa Serena Aliyah Elisa Georgina Harmony Mary Yasmin Amy Lillian Reeva Annabel Arla Marley Elora Megan Iqra Belle Emmeline Arianna Celine Fatimah Imaan Elise Philippa Zaynab Anais Gabriela Theodora Mali Aida Eira Emelia Hiba Alara Ayzal Selena Avery Keira Lacey Lois Madeline Juniper Liana Winifred Yara Faye Fern Honey Arwen Audrey Blake Ember Gianna Iyla Kayla Hoorain Peyton Romy Minha Rachel Adelaide Jannat Octavia Ana Constance";
-    var last = [];
-    last = lastn.split(" ");
-    var random = last[Math.floor(Math.random() * last.length)];
-document.getElementById("lastname").innerHTML=random;
+	var midn = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Grace Emily Sofia Daisy Evelyn Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Indie Felicity Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Esther Polly Amira Zainab Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Vienna Ayah Lucia Laura Julia Mirha Ayda Darcey Faith Hana Everly Liliana Nola Talia Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Flora Melissa Alaia Aliza Leia Ayesha Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom Laila Maja Paige India Irha Robin Amelia-Rose Rae Saoirse Ariya Isra Alicia Cecilia Ocean Aleena Amayah Nylah Inayah Kaia Miley Adeline Amirah Neve Alisha Helena Hawa Serena Aliyah Elisa Georgina Harmony Mary Yasmin Amy Lillian Reeva Annabel Arla Marley Elora Megan Iqra Belle Emmeline Arianna Celine Fatimah Imaan Elise Philippa Zaynab Anais Gabriela Theodora Mali Aida Eira Emelia Hiba Alara Ayzal Selena Avery Keira Lacey Lois Madeline Juniper Liana Winifred Yara Faye Fern Honey Arwen Audrey Blake Ember Gianna Iyla Kayla Hoorain Peyton Romy Minha Rachel Adelaide Jannat Octavia Ana Constance";
+    var mid = [];
+    mid = midn.split(" ");
+    var random = mid[Math.floor(Math.random() * mid.length)];
+document.getElementById("middlename").innerHTML=random;
+}
+
+function femmiddleValue()
+{
+	var midn = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Grace Emily Sofia Daisy Evelyn Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Indie Felicity Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Esther Polly Amira Zainab Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Vienna Ayah Lucia Laura Julia Mirha Ayda Darcey Faith Hana Everly Liliana Nola Talia Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Flora Melissa Alaia Aliza Leia Ayesha Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom Laila Maja Paige India Irha Robin Amelia-Rose Rae Saoirse Ariya Isra Alicia Cecilia Ocean Aleena Amayah Nylah Inayah Kaia Miley Adeline Amirah Neve Alisha Helena Hawa Serena Aliyah Elisa Georgina Harmony Mary Yasmin Amy Lillian Reeva Annabel Arla Marley Elora Megan Iqra Belle Emmeline Arianna Celine Fatimah Imaan Elise Philippa Zaynab Anais Gabriela Theodora Mali Aida Eira Emelia Hiba Alara Ayzal Selena Avery Keira Lacey Lois Madeline Juniper Liana Winifred Yara Faye Fern Honey Arwen Audrey Blake Ember Gianna Iyla Kayla Hoorain Peyton Romy Minha Rachel Adelaide Jannat Octavia Ana Constance";
+    var mid = [];
+    mid = midn.split(" ");
+    var random = mid[Math.floor(Math.random() * mid.length)];
+document.getElementById("middlename").innerHTML=random;
+}
+
+function middleValue()
+{
+	var midn = "Olivia Amelia Isla Ava Lily Ivy Freya Florence Isabella Mia Willow Sienna Poppy Sophia Grace Emily Sofia Daisy Evelyn Phoebe Ella Charlotte Harper Maya Matilda Ruby Aria Penelope Hallie Luna Bonnie Ada Emilia Alice Sophie Esme Isabelle Maisie Violet Delilah Mila Eva Arabella Maeve Aurora Mabel Ayla Eliza Rose Erin Layla Scarlett Chloe Margot Elizabeth Imogen Eleanor Orla Thea Harriet Iris Nancy Emma Jessica Zara Robyn Elodie Olive Maria Maryam Bella Lola Lyra Lyla Ophelia Ottilie Molly Lara Myla Eden Eloise Darcie Lucy Nova Lilly Clara Jasmine Edith Summer Amelie Hannah Fatima Sara Autumn Heidi Beatrice Nevaeh Zoe Aisha Hazel Holly Martha Maddison Anna Esmae Lilah Amber Francesca Nora Georgia Raya Anaya Marnie Athena River Victoria Amaya Abigail Hope Aaliyah Sarah Cleo Annabelle Indie Felicity Elena Maeva Cora Ariana Savannah Alba Rosa Sadie Isabel Zahra Harlow Wren Nina Dua Alayna Gabriella Amara Leah Mya Darcy Esther Polly Amira Zainab Anastasia Madison Aurelia Ariella Niamh Liyana Primrose Paisley Lydia Skylar Arya Etta Naomi Zoya Khadija Clementine Eliana Lillie Alexandra Maia Remi Dorothy Mollie Skye Daphne Aoife Piper Ayat Beatrix Isobel Vienna Ayah Lucia Laura Julia Mirha Ayda Darcey Faith Hana Everly Liliana Nola Talia Quinn Riley Hanna Lena Alana Khadijah Alyssa Inaya Seren Kiara Safa Halle Miriam Valentina Natalia Norah Nyla Everleigh Alina Leila Amina Astrid Aubrey Madeleine Lila Hafsa Hollie Noor Noa Pearl Skyla Harley Yusra Eve Brooke Aiza Lana Melody Mariam Ayra Diana Tallulah Aya Nell Winter Flora Melissa Alaia Aliza Leia Ayesha Amal Haniya Josephine Meadow Alma Anya Antonia Alaya Syeda Bethany Ida April Rebecca Addison Sylvie Alessia Nia Nicole Tabitha Freyja Libby Lina Inaaya Rosalie Stella Blossom Laila Maja Paige India Irha Robin Amelia-Rose Rae Saoirse Ariya Isra Alicia Cecilia Ocean Aleena Amayah Nylah Inayah Kaia Miley Adeline Amirah Neve Alisha Helena Hawa Serena Aliyah Elisa Georgina Harmony Mary Yasmin Amy Lillian Reeva Annabel Arla Marley Elora Megan Iqra Belle Emmeline Arianna Celine Fatimah Imaan Elise Philippa Zaynab Anais Gabriela Theodora Mali Aida Eira Emelia Hiba Alara Ayzal Selena Avery Keira Lacey Lois Madeline Juniper Liana Winifred Yara Faye Fern Honey Arwen Audrey Blake Ember Gianna Iyla Kayla Hoorain Peyton Romy Minha Rachel Adelaide Jannat Octavia Ana Constance";
+    var mid = [];
+    mid = midn.split(" ");
+    var random = mid[Math.floor(Math.random() * mid.length)];
+document.getElementById("middlename").innerHTML=random;
 }
 
 </script>
